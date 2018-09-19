@@ -1,7 +1,7 @@
 <template>
   <Row>
     <Col span="8">
-      <Menu :theme="theme2">
+      <Menu :theme="theme2" on-select="{}">
         <Submenu name="1">
           <template slot="title">
             内容管理
@@ -100,12 +100,27 @@
   
 </template>
 <script>
+import { mapGetters } from 'vuex';
 export default {
   name: 'detail',
   data () {
     return {
-      theme2: 'dark'
+      theme2: 'dark',
     }
+  },
+  mounted() {
+    this.getMenuArr()
+  },
+  methods: {
+    getMenuArr: function() {
+      console.log('aaa')
+      this.$store.dispatch('GETMENUARR')
+    }
+  },
+  computed: {
+    // ...mapGetters([
+    //   'getMenuArr'
+    // ])
   }
 }
 </script>

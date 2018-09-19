@@ -1,0 +1,73 @@
+{
+  "data": "success",
+  "menuArr": [
+    {
+      "path": "detail",
+      "tag": "内容管理",
+      "children": [
+        {
+          "path": "content",
+          "name": "article",
+          "tag": "文章管理"
+        },
+        {
+          "path": "content",
+          "name": "comment",
+          "tag": "评论管理"
+        },
+        {
+          "path": "content",
+          "name": "report",
+          "tag": "举报管理"
+        }
+      ]
+    },
+    {
+      "path": "detail",
+      "tag": "用户管理",
+      "children": [
+        {
+          "path": "users",
+          "name": "newUsers",
+          "tag": "新增用户"
+        },
+        {
+          "path": "users",
+          "name": "activeUsers",
+          "tag": "活跃用户"
+        }
+      ]
+    },
+    {
+      "path": "detail",
+      "tag": "统计分析",
+      "children": [
+        {
+          "path": "statistic",
+          "name": "increase",
+          "tag": "新增和启动"
+        },
+        {
+          "path": "statistic",
+          "name": "active",
+          "tag": "活跃分析"
+        },
+        {
+          "path": "statistic",
+          "name": "time",
+          "tag": "时段分析"
+        },
+        {
+          "path": "statistic",
+          "name": "stay",
+          "tag": "用户留存"
+        },
+        {
+          "path": "statistic",
+          "name": "lose",
+          "tag": "流失用户"
+        }
+      ]
+    }
+  ]
+}
